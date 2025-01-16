@@ -85,6 +85,18 @@
             background-color: #03c20c;
         }
 
+        abbr {
+            text-decoration: none;
+        }
+
+        abbr[title] {
+            border-bottom: none;
+            cursor: help;
+            text-decoration: none;
+            color: #c60000;
+            background-color: #00ff08;
+        }
+
         pre {
             white-space: pre-wrap;
             word-wrap: break-word;
@@ -132,7 +144,7 @@
 <body>
     <h1><a>Py</a>Tech</h1>
 
-    <button id="run-button" onclick="runCode()">Run Code</button>
+    <abbr title="ctrl+enter"><button id="run-button" onclick="runCode()">Run Code</button></abbr>
     <div class="container">
         <div class="editor-container">
             <div id="editor"></div>
